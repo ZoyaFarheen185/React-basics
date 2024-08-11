@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- basically here h1 is getting created by the javascript -->
+    </div>
+    <script>
+      const heading = document.createElement('h1');
+      heading.innerHTML = 'hi javascrpt';
+
+      //now will be fetching id from javascript
+      const root = document.getElementById('root');
+      root.appendChild(heading);
+
+      const paragraph = document.createElement('p');
+      paragraph.innerHTML = 'namaste react course stated by 10-08-2024';
+
+      root.appendChild(paragraph);
+    </script>
+  </body>
+</html>
