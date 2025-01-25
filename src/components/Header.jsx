@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { LOGO_URL } from '../utils/constants';
+import './login_button.css';
+
 const Header = () => {
   const [login, setLogin] = useState('Login');
   const handleLogin = () => {
@@ -16,7 +18,7 @@ const Header = () => {
           <li>About us</li>
           <li>contact</li>
           <li>Cart</li>
-          <button onClick={handleLogin} style={{ cursor: 'pointer' }}>
+          <button className ="login_button" onClick={handleLogin} style={{ cursor: 'pointer' }}>
             {login}
           </button>
         </ul>
